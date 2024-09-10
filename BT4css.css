@@ -1,0 +1,195 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styles */
+nav {
+  width: 100%;
+  background-color: #333;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #f39c12; /* Highlight color for the designer text */
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.link a:hover {
+  color: #f39c12; /* Hover color */
+}
+
+/* Hamburger Icon Style */
+.hamburg {
+  display: none; /* Hidden by default */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 10;
+  padding: 10px 0;
+}
+
+.dropdown .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown .links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s;
+}
+
+.dropdown .links a:hover {
+  background-color: #444;
+}
+
+.cancel {
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .links {
+    display: none; /* Hide links in the nav bar */
+  }
+
+  .hamburg {
+    display: block; /* Show the hamburger icon */
+  }
+
+  .dropdown {
+    display: none; /* Initially hide the dropdown */
+  }
+}
+
+/* Main Content Styles */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.image img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #f39c12;
+  margin-bottom: 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content h1 span {
+  color: #f39c12;
+}
+
+.typewriter {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.bt {
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bt:hover {
+  background-color: #e67e22;
+}
+/* Links Container Styles */
+.links {
+  display: flex;
+  flex-direction: column; /* Arrange links in a column */
+  align-items: center; /* Center align links */
+  padding: 20px 0; /* Vertical padding */
+  background-color: #333; /* Background color */
+  width: 100%; /* Full width */
+  position: relative; /* Position relative for the cancel icon */
+}
+
+/* Individual Links Styles */
+.links a {
+  color: #fff; /* White text color */
+  list-style: none;
+  margin-top: 0px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+/* Hover Effect for Links */
+.links a:hover {
+  background-color: #444; /* Darker background on hover */
+}
+
+/* Cancel Icon Styles */
+.cancel {
+  font-size: 24px; /* Size of the icon */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: #fff; /* White color */
+  position: absolute; /* Absolute positioning within the links container */
+  top: 10px; /* Position from the top */
+  right: 20px; /* Position from the right */
+}
